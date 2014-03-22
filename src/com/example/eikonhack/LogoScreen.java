@@ -12,7 +12,7 @@ public class LogoScreen extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_logo_screen);
 		showLoadingDialog();
-		//comment
+		//comments
 	}
 
 	private ProgressDialog progress;
