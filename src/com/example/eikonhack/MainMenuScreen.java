@@ -5,7 +5,7 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.Menu;
 
-public class MainMenu extends Activity {
+public class MainMenuScreen extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
