@@ -9,6 +9,14 @@ package com.example.eikonhack;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int trimLength=0x7f010000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -24,10 +32,20 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int action_settings=0x7f080009;
+        public static final int analyzeButton=0x7f080002;
+        public static final int companyNameString=0x7f080001;
+        public static final int industryCompany=0x7f080004;
+        public static final int nameCompany=0x7f080003;
+        public static final int newsTitle=0x7f080008;
+        public static final int summaryTitle=0x7f080005;
+        public static final int summmaryOpenClose=0x7f080007;
+        public static final int summmaryText=0x7f080006;
+        public static final int textView1=0x7f080000;
     }
     public static final class layout {
         public static final int main_menu_screen=0x7f030000;
+        public static final int menu_company_screen=0x7f030001;
     }
     public static final class menu {
         public static final int logo_screen=0x7f070000;
@@ -35,7 +53,9 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
+        public static final int button_analyze=0x7f050004;
+        public static final int insert_company=0x7f050002;
+        public static final int type_company_name_hint=0x7f050003;
     }
     public static final class style {
         /** 
@@ -65,4 +85,33 @@ public final class R {
          */
         public static final int AppTheme=0x7f060001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a ExpandableTextView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ExpandableTextView_trimLength com.example.eikonhack:trimLength}</code></td><td></td></tr>
+           </table>
+           @see #ExpandableTextView_trimLength
+         */
+        public static final int[] ExpandableTextView = {
+            0x7f010000
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.eikonhack.R.attr#trimLength}
+          attribute's value can be found in the {@link #ExpandableTextView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.eikonhack:trimLength
+        */
+        public static final int ExpandableTextView_trimLength = 0;
+    };
 }

@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainMenuScreen" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+    
+   		<TextView
+   		    android:id="@+id/nameCompany"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_centerVertical="true"
+   		    android:layout_gravity="left"
+   		    android:layout_marginLeft="15dp"
+   		    android:text="Facebook"
+   		    android:textColor="#ffffff"
+   		    android:textSize="30sp"
+   		    android:typeface="serif" />
+		
+   		<TextView
+   		    android:id="@+id/industryCompany"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignParentRight="true"
+   		    android:layout_gravity="right"
+   		    android:layout_marginRight="5dp"
+   		    android:layout_marginTop="18dp"
+   		    android:gravity="right|bottom"
+   		    android:text="Networking"
+   		    android:textSize="15sp" />
+	</RelativeLayout>
+	<View
+   	 	android:layout_width="fill_parent"
+    	android:layout_height="1dp"
+	    android:background="@android:color/darker_gray"/>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+   		
+    	<TextView
+    	    android:id="@+id/summaryTitle"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+       	 	android:layout_gravity="left"
+       	 	android:layout_marginLeft="20dp"
+       		android:layout_marginTop="10dp"
+        	android:text="Summary"
+        	android:textColor="#DBDBDB"
+        	android:textSize="15sp" />
+    
+ 	 	<com.example.eikonhack.ExpandableTextView
+        	android:id = "@+id/summmaryText"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="10dp"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginTop="10dp"
+        	android:text="asdfas asdf asfd ljashdg ahg npaighq eòkfngapeirhg qeijgh " />
+	
+		<TextView
+	    	android:id="@+id/summmaryOpenClose"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="20dp"
+	    	android:gravity="center"
+	    	android:text="▼" />
+	</LinearLayout>
+	<View
+   	 	android:layout_width="fill_parent"
+    	android:layout_height="1dp"
+	    android:background="@android:color/darker_gray"/>
+	
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+   		
+    	<TextView
+    	    android:id="@+id/newsTitle"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+       	 	android:layout_gravity="left"
+       	 	android:layout_marginLeft="20dp"
+       		android:layout_marginTop="10dp"
+        	android:text="News"
+        	android:textColor="#DBDBDB"
+        	android:textSize="15sp" />
+    
+ 	 	
+	
+		<TextView
+	    	android:id="@+id/summmaryOpenClose"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="20dp"
+	    	android:gravity="center"
+	    	android:text="▼" />
+	</LinearLayout>
+	<View
+   	 	android:layout_width="fill_parent"
+    	android:layout_height="1dp"
+	    android:background="@android:color/darker_gray"/>
+	
+</LinearLayout>
