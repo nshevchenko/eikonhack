@@ -1,5 +1,5 @@
 package com.example.eikonhack;
 
-public class CompanyName {
+public class HttpRequest {
 
 }
