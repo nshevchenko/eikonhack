@@ -26,6 +26,7 @@ public class MainMenuScreen extends Activity {
 
 	Button analyzeButton;
 	EditText editText;
+	
 	public void findElements()
 	{
 		analyzeButton = (Button)findViewById(R.id.analyzeButton);
