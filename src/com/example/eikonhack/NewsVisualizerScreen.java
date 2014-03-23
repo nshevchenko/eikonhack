@@ -11,16 +11,14 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 
-
-
-public class MainMenuScreen extends Activity {
+public class NewsVisualizerScreen extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 	    this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		setContentView(R.layout.main_menu_screen);
+		setContentView(R.layout.news_visualizer_screen);
 		ViewController.init();
 		findElements();
 	}
@@ -37,8 +35,8 @@ public class MainMenuScreen extends Activity {
 		analyzeButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				ViewController.getCompany().setName(editText.getText().toString());
-				Intent intent = new Intent(MainMenuScreen.this, MenuCompanyScreen.class);
-				startActivity(intent);
+//				Intent intent = new Intent(MainMenuScreen.this, MenuCompanyScreen.class);
+//				startActivity(intent);
 				finish();
 			}
 		});
